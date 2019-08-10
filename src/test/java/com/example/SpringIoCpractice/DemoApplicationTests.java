@@ -7,10 +7,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringIoCPracticeApplicationTests {
-
-	@Test
-	public void contextLoads() {
-	}
+public class DemoApplicationTests {
+    private HelloWorld hw;
+    @Test
+    public void contextLoads() {
+        hw.setHello("helloworld");
+        hw.getHello();
+    }
 
 }
